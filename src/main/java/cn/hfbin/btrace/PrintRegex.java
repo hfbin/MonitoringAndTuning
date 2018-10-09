@@ -7,7 +7,8 @@ import com.sun.btrace.annotations.ProbeMethodName;
 
 @BTrace
 public class PrintRegex {
-	
+
+	//支持正则表达式  拦截Ch4Controller类所有
 	@OnMethod(
 	        clazz="cn.hfbin.btrace.Ch4Controller",
 	        method="/.*/"

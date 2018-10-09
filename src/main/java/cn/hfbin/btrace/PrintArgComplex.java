@@ -21,7 +21,7 @@ public class PrintArgComplex {
 	public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn, User user) {
 		//print all fields
 		BTraceUtils.printFields(user);
-		//print one field
+		//加上User类，否则找不到User类
 		Field filed2 = BTraceUtils.field("cn.hfbin.btrace.User", "name");
 		BTraceUtils.println(BTraceUtils.get(filed2, user));
 		BTraceUtils.println(pcn+","+pmn);

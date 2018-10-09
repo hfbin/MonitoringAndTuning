@@ -3,6 +3,7 @@ package cn.hfbin.btrace;
 import com.sun.btrace.BTraceUtils;
 import com.sun.btrace.annotations.BTrace;
 
+//直接打印系统一些信息
 @BTrace
 public class PrintJinfo {
     static {
